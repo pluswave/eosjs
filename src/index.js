@@ -1,11 +1,4 @@
-try {
-  require("babel-polyfill");
-} catch(e) {
-  if(e.message.indexOf('only one instance of babel-polyfill is allowed') === -1) {
-    console.error(e)
-  }
-}
-
+require('regenerator-runtime');
 const ecc = require('eosjs-ecc')
 const Fcbuffer = require('fcbuffer')
 const EosApi = require('eosjs-api')
